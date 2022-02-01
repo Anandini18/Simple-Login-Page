@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uu"
+    tools:context=".LoginDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.2"
+        android:background="#BDBDBD"
+        android:elevation="89dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Thank You For Logging in !!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:alpha="0.3"
+        android:background="@color/black"
+        android:lineSpacingMultiplier="1"
+        android:text="nandini"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
+
+    <TextView
+        android:id="@+id/warningText"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.6"
+        android:background="@color/black"
+        android:drawableLeft="@drawable/alertt"
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/white"
+        android:text="Please don't share your personal details to anyone.\nBe alert and protect yourself from being scammed."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your Entered Details are : "
+        android:textColor="#FFFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
